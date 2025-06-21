@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "abalone.html",
+    "href": "abalone.html",
+    "title": "Abalone",
+    "section": "",
+    "text": "import pandas as pd\nimport os\nfrom data import load_dataset\nfrom utils import DATADIR\nimport plotter\n\n/Users/aru/code/data-smells/.venv/lib/python3.13/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html\n  from .autonotebook import tqdm as notebook_tqdm\nabalone = load_dataset(\"abalone\")\nabalone\n\n\n\n\n\n\n\n\nSex\nLength\nDiameter\nHeight\nWhole weight\nShucked weight\nViscera weight\nShell weight\nRings\n\n\n\n\n0\nM\n0.455\n0.365\n0.095\n0.5140\n0.2245\n0.1010\n0.1500\n15\n\n\n1\nM\n0.350\n0.265\n0.090\n0.2255\n0.0995\n0.0485\n0.0700\n7\n\n\n2\nF\n0.530\n0.420\n0.135\n0.6770\n0.2565\n0.1415\n0.2100\n9\n\n\n3\nM\n0.440\n0.365\n0.125\n0.5160\n0.2155\n0.1140\n0.1550\n10\n\n\n4\nI\n0.330\n0.255\n0.080\n0.2050\n0.0895\n0.0395\n0.0550\n7\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n4172\nF\n0.565\n0.450\n0.165\n0.8870\n0.3700\n0.2390\n0.2490\n11\n\n\n4173\nM\n0.590\n0.440\n0.135\n0.9660\n0.4390\n0.2145\n0.2605\n10\n\n\n4174\nM\n0.600\n0.475\n0.205\n1.1760\n0.5255\n0.2875\n0.3080\n9\n\n\n4175\nF\n0.625\n0.485\n0.150\n1.0945\n0.5310\n0.2610\n0.2960\n10\n\n\n4176\nM\n0.710\n0.555\n0.195\n1.9485\n0.9455\n0.3765\n0.4950\n12\n\n\n\n\n4177 rows × 9 columns"
+  },
+  {
+    "objectID": "abalone.html#descriptive-statistics",
+    "href": "abalone.html#descriptive-statistics",
+    "title": "Abalone",
+    "section": "Descriptive statistics",
+    "text": "Descriptive statistics\n\nabalone.describe(include=\"all\")\n\n\n\n\n\n\n\n\nSex\nLength\nDiameter\nHeight\nWhole weight\nShucked weight\nViscera weight\nShell weight\nRings\n\n\n\n\ncount\n4177\n4177.000000\n4177.000000\n4177.000000\n4177.000000\n4177.000000\n4177.000000\n4177.000000\n4177.000000\n\n\nunique\n3\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\ntop\nM\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\nfreq\n1528\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\nmean\nNaN\n0.523992\n0.407881\n0.139516\n0.828742\n0.359367\n0.180594\n0.238831\n9.933684\n\n\nstd\nNaN\n0.120093\n0.099240\n0.041827\n0.490389\n0.221963\n0.109614\n0.139203\n3.224169\n\n\nmin\nNaN\n0.075000\n0.055000\n0.000000\n0.002000\n0.001000\n0.000500\n0.001500\n1.000000\n\n\n25%\nNaN\n0.450000\n0.350000\n0.115000\n0.441500\n0.186000\n0.093500\n0.130000\n8.000000\n\n\n50%\nNaN\n0.545000\n0.425000\n0.140000\n0.799500\n0.336000\n0.171000\n0.234000\n9.000000\n\n\n75%\nNaN\n0.615000\n0.480000\n0.165000\n1.153000\n0.502000\n0.253000\n0.329000\n11.000000\n\n\nmax\nNaN\n0.815000\n0.650000\n1.130000\n2.825500\n1.488000\n0.760000\n1.005000\n29.000000\n\n\n\n\n\n\n\n\nabalone.dtypes\n\nSex                object\nLength            float64\nDiameter          float64\nHeight            float64\nWhole weight      float64\nShucked weight    float64\nViscera weight    float64\nShell weight      float64\nRings               int64\ndtype: object\n\n\n\nabalone.shape\n\n(4177, 9)"
+  },
+  {
+    "objectID": "abalone.html#missing-values",
+    "href": "abalone.html#missing-values",
+    "title": "Abalone",
+    "section": "Missing values",
+    "text": "Missing values\n\nabalone.isna().any()\n\nSex               False\nLength            False\nDiameter          False\nHeight            False\nWhole weight      False\nShucked weight    False\nViscera weight    False\nShell weight      False\nRings             False\ndtype: bool"
+  },
+  {
+    "objectID": "abalone.html#duplicate-values",
+    "href": "abalone.html#duplicate-values",
+    "title": "Abalone",
+    "section": "Duplicate values",
+    "text": "Duplicate values\n\nabalone[abalone.duplicated()].shape\n\n(0, 9)"
+  },
+  {
+    "objectID": "abalone.html#correlation",
+    "href": "abalone.html#correlation",
+    "title": "Abalone",
+    "section": "Correlation",
+    "text": "Correlation\n\nplotter.corr(abalone.corr(numeric_only=True))"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Smells",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
