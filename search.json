@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Smells",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "abalone.html",
     "href": "abalone.html",
     "title": "Abalone",
@@ -33,19 +47,5 @@
     "title": "Abalone",
     "section": "Correlation",
     "text": "Correlation\n\nplotter.corr(abalone.corr(numeric_only=True))"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Smells",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
