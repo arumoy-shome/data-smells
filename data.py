@@ -7,7 +7,6 @@ REGISTRY = {
 }
 
 def load_dataset(name: str) -> pd.DataFrame:
-    breakpoint()
     h, p = REGISTRY[name]
     
     return kagglehub.load_dataset(
