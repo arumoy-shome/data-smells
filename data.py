@@ -4,6 +4,7 @@ from kagglehub import KaggleDatasetAdapter
 
 REGISTRY = {
     "abalone": ("rodolfomendes/abalone-dataset/versions/3", "abalone.csv"),
+    "adult": ("uciml/adult-census-income/versions/3", "adult.csv"),
 }
 
 def load_dataset(name: str) -> pd.DataFrame:
