@@ -7,13 +7,6 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "abalone.html",
     "href": "abalone.html",
     "title": "Abalone",
@@ -47,5 +40,47 @@
     "title": "Abalone",
     "section": "Categorical analysis",
     "text": "Categorical analysis\nWe have one categorical feature in the dataset namely sex. Let’s condition rings on sex to see if the number of rings vary across the sexes.\n\nsns.histplot(data=abalone, x=\"Rings\", hue=\"Sex\", bins=20, multiple=\"fill\")\n\n\n\n\n\n\n\n\nWe observe similar distribution for the male and female sexes. Infants primarily have lower number of rings."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "adult.html",
+    "href": "adult.html",
+    "title": "Adult census income",
+    "section": "",
+    "text": "The data documentation is informative.\nimport pandas as pd\nimport seaborn as sns\nimport numpy as np\nimport os\nfrom data import load_dataset\nimport plotter"
+  },
+  {
+    "objectID": "adult.html#preliminary-analysis",
+    "href": "adult.html#preliminary-analysis",
+    "title": "Adult census income",
+    "section": "Preliminary analysis",
+    "text": "Preliminary analysis\n\nadult = load_dataset(\"adult\")\nadult\n\nDownloading from https://www.kaggle.com/api/v1/datasets/download/uciml/adult-census-income?dataset_version_number=3&file_name=adult.csv...\n\n\n100%|██████████| 450k/450k [00:00&lt;00:00, 1.03MB/s]\n\n\nExtracting zip of adult.csv...\n\n\n\n\n\n\n\n\n\n\n\n\nage\nworkclass\nfnlwgt\neducation\neducation.num\nmarital.status\noccupation\nrelationship\nrace\nsex\ncapital.gain\ncapital.loss\nhours.per.week\nnative.country\nincome\n\n\n\n\n0\n90\n?\n77053\nHS-grad\n9\nWidowed\n?\nNot-in-family\nWhite\nFemale\n0\n4356\n40\nUnited-States\n&lt;=50K\n\n\n1\n82\nPrivate\n132870\nHS-grad\n9\nWidowed\nExec-managerial\nNot-in-family\nWhite\nFemale\n0\n4356\n18\nUnited-States\n&lt;=50K\n\n\n2\n66\n?\n186061\nSome-college\n10\nWidowed\n?\nUnmarried\nBlack\nFemale\n0\n4356\n40\nUnited-States\n&lt;=50K\n\n\n3\n54\nPrivate\n140359\n7th-8th\n4\nDivorced\nMachine-op-inspct\nUnmarried\nWhite\nFemale\n0\n3900\n40\nUnited-States\n&lt;=50K\n\n\n4\n41\nPrivate\n264663\nSome-college\n10\nSeparated\nProf-specialty\nOwn-child\nWhite\nFemale\n0\n3900\n40\nUnited-States\n&lt;=50K\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n32556\n22\nPrivate\n310152\nSome-college\n10\nNever-married\nProtective-serv\nNot-in-family\nWhite\nMale\n0\n0\n40\nUnited-States\n&lt;=50K\n\n\n32557\n27\nPrivate\n257302\nAssoc-acdm\n12\nMarried-civ-spouse\nTech-support\nWife\nWhite\nFemale\n0\n0\n38\nUnited-States\n&lt;=50K\n\n\n32558\n40\nPrivate\n154374\nHS-grad\n9\nMarried-civ-spouse\nMachine-op-inspct\nHusband\nWhite\nMale\n0\n0\n40\nUnited-States\n&gt;50K\n\n\n32559\n58\nPrivate\n151910\nHS-grad\n9\nWidowed\nAdm-clerical\nUnmarried\nWhite\nFemale\n0\n0\n40\nUnited-States\n&lt;=50K\n\n\n32560\n22\nPrivate\n201490\nHS-grad\n9\nNever-married\nAdm-clerical\nOwn-child\nWhite\nMale\n0\n0\n20\nUnited-States\n&lt;=50K\n\n\n\n\n32561 rows × 15 columns\n\n\n\n\nadult.shape\n\n(32561, 15)\n\n\n\nadult.dtypes\n\nage                int64\nworkclass         object\nfnlwgt             int64\neducation         object\neducation.num      int64\nmarital.status    object\noccupation        object\nrelationship      object\nrace              object\nsex               object\ncapital.gain       int64\ncapital.loss       int64\nhours.per.week     int64\nnative.country    object\nincome            object\ndtype: object\n\n\nCheck for missing values next. The documentation mentioned that missing values are represented by “?” in the dataset.\n\nadult.isna().any()\n\nage               False\nworkclass         False\nfnlwgt            False\neducation         False\neducation.num     False\nmarital.status    False\noccupation        False\nrelationship      False\nrace              False\nsex               False\ncapital.gain      False\ncapital.loss      False\nhours.per.week    False\nnative.country    False\nincome            False\ndtype: bool\n\n\n\nadult[adult.eq(\"?\")].any()\n\nage               False\nworkclass          True\nfnlwgt            False\neducation         False\neducation.num     False\nmarital.status    False\noccupation         True\nrelationship      False\nrace              False\nsex               False\ncapital.gain      False\ncapital.loss      False\nhours.per.week    False\nnative.country     True\nincome            False\ndtype: bool\n\n\n\nadult.workclass.value_counts()\n\nworkclass\nPrivate             22696\nSelf-emp-not-inc     2541\nLocal-gov            2093\n?                    1836\nState-gov            1298\nSelf-emp-inc         1116\nFederal-gov           960\nWithout-pay            14\nNever-worked            7\nName: count, dtype: int64\n\n\nadult.eq() does not catch ? but if we inspect value_counts() for a specific feature, we note that ? does exist in the dataset. Why is that?\n\nadult.workclass.astype(\"category\").cat.categories\n\nIndex(['?', 'Federal-gov', 'Local-gov', 'Never-worked', 'Private',\n       'Self-emp-inc', 'Self-emp-not-inc', 'State-gov', 'Without-pay'],\n      dtype='object')\n\n\nI suspect there are leading and trailing whitespaces!\n\ncategorical_features = adult.select_dtypes(include=\"object\").columns.to_list()\n\nadult[categorical_features].apply(lambda col: col.str.strip())\n\n\n\n\n\n\n\n\nworkclass\neducation\nmarital.status\noccupation\nrelationship\nrace\nsex\nnative.country\nincome\n\n\n\n\n0\n?\nHS-grad\nWidowed\n?\nNot-in-family\nWhite\nFemale\nUnited-States\n&lt;=50K\n\n\n1\nPrivate\nHS-grad\nWidowed\nExec-managerial\nNot-in-family\nWhite\nFemale\nUnited-States\n&lt;=50K\n\n\n2\n?\nSome-college\nWidowed\n?\nUnmarried\nBlack\nFemale\nUnited-States\n&lt;=50K\n\n\n3\nPrivate\n7th-8th\nDivorced\nMachine-op-inspct\nUnmarried\nWhite\nFemale\nUnited-States\n&lt;=50K\n\n\n4\nPrivate\nSome-college\nSeparated\nProf-specialty\nOwn-child\nWhite\nFemale\nUnited-States\n&lt;=50K\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n32556\nPrivate\nSome-college\nNever-married\nProtective-serv\nNot-in-family\nWhite\nMale\nUnited-States\n&lt;=50K\n\n\n32557\nPrivate\nAssoc-acdm\nMarried-civ-spouse\nTech-support\nWife\nWhite\nFemale\nUnited-States\n&lt;=50K\n\n\n32558\nPrivate\nHS-grad\nMarried-civ-spouse\nMachine-op-inspct\nHusband\nWhite\nMale\nUnited-States\n&gt;50K\n\n\n32559\nPrivate\nHS-grad\nWidowed\nAdm-clerical\nUnmarried\nWhite\nFemale\nUnited-States\n&lt;=50K\n\n\n32560\nPrivate\nHS-grad\nNever-married\nAdm-clerical\nOwn-child\nWhite\nMale\nUnited-States\n&lt;=50K\n\n\n\n\n32561 rows × 9 columns\n\n\n\n\nadult[adult.eq(\"?\")].any()\n\nage               False\nworkclass          True\nfnlwgt            False\neducation         False\neducation.num     False\nmarital.status    False\noccupation         True\nrelationship      False\nrace              False\nsex               False\ncapital.gain      False\ncapital.loss      False\nhours.per.week    False\nnative.country     True\nincome            False\ndtype: bool\n\n\n\nadult = adult.replace(\"?\", value=np.nan)\nadult.isna().any()\n\nage               False\nworkclass          True\nfnlwgt            False\neducation         False\neducation.num     False\nmarital.status    False\noccupation         True\nrelationship      False\nrace              False\nsex               False\ncapital.gain      False\ncapital.loss      False\nhours.per.week    False\nnative.country     True\nincome            False\ndtype: bool\n\n\n\nadult = adult.dropna()\nadult.shape\n\n(30162, 15)\n\n\n\nadult[categorical_features] = adult[categorical_features].astype(\"category\")\nadult.dtypes\n\nage                  int64\nworkclass         category\nfnlwgt               int64\neducation         category\neducation.num        int64\nmarital.status    category\noccupation        category\nrelationship      category\nrace              category\nsex               category\ncapital.gain         int64\ncapital.loss         int64\nhours.per.week       int64\nnative.country    category\nincome            category\ndtype: object\n\n\n\nadult[adult.duplicated()].shape\n\n(23, 15)\n\n\n23 rows with duplicate entries, let’s drop those.\n\nadult = adult.drop_duplicates()\nadult.shape\n\n(30139, 15)\n\n\nFinally, check for correlations in numerical features.\n\nplotter.corr(adult.corr(numeric_only=True))\n\n\n\n\n\n\n\n\nWe see more strong positive and negative correlations amongst the numerical features. This is an opportunity to do some experimentation with feature selection and drop features which don’t bring anything to the table. For this analysis however, we don’t do anything further."
+  },
+  {
+    "objectID": "adult.html#distributional-analysis",
+    "href": "adult.html#distributional-analysis",
+    "title": "Adult census income",
+    "section": "Distributional analysis",
+    "text": "Distributional analysis\n\nsns.histplot(data=adult, x=\"income\")\n\n\n\n\n\n\n\n\nThe labels for the classes are not balanced."
+  },
+  {
+    "objectID": "adult.html#relational-analysis",
+    "href": "adult.html#relational-analysis",
+    "title": "Adult census income",
+    "section": "Relational analysis",
+    "text": "Relational analysis\nTODO"
+  },
+  {
+    "objectID": "adult.html#categorical-analysis",
+    "href": "adult.html#categorical-analysis",
+    "title": "Adult census income",
+    "section": "Categorical analysis",
+    "text": "Categorical analysis\nTODO"
   }
 ]
