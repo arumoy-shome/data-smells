@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://arumoy-shome.github.io/data-smells/airbnb.html</loc>
-    <lastmod>2025-07-05T14:57:25.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://arumoy-shome.github.io/data-smells/about.html</loc>
-    <lastmod>2025-07-05T14:57:25.755Z</lastmod>
-  </url>
-  <url>
-    <loc>https://arumoy-shome.github.io/data-smells/adult.html</loc>
-    <lastmod>2025-07-05T14:57:25.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://arumoy-shome.github.io/data-smells/index.html</loc>
-    <lastmod>2025-07-05T14:57:25.757Z</lastmod>
+    <loc>https://arumoy-shome.github.io/data-smells/avocado.html</loc>
+    <lastmod>2025-07-09T19:19:50.185Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/abalone.html</loc>
-    <lastmod>2025-07-05T14:57:25.755Z</lastmod>
+    <lastmod>2025-07-09T19:19:50.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arumoy-shome.github.io/data-smells/index.html</loc>
+    <lastmod>2025-07-09T19:19:50.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arumoy-shome.github.io/data-smells/adult.html</loc>
+    <lastmod>2025-07-09T19:19:50.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arumoy-shome.github.io/data-smells/about.html</loc>
+    <lastmod>2025-07-09T19:19:50.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arumoy-shome.github.io/data-smells/airbnb.html</loc>
+    <lastmod>2025-07-09T19:19:50.185Z</lastmod>
   </url>
 </urlset>
