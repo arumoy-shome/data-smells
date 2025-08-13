@@ -1,4 +1,7 @@
 ---
 title: Imbalanced examples
 categories: ["Miscellaneous"]
+description: |
+  Presence of unbalanced examples for the classes in a dataset can
+  lead to biased predictions.
 ---

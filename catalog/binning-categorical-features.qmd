@@ -1,4 +1,8 @@
 ---
 title: Binning categorical features
 categories: ["Categorical"]
+description: |
+  One-hot encoding a feature with high cardinality results in
+  a large feature space and incurs higher memory, disk space and computation
+  costs.
 ---

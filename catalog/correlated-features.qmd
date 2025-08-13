@@ -1,4 +1,8 @@
 ---
 title: Correlated Features
 categories: ["Redundant"]
+description: |
+  Correlated features present an opportunity to perform feature
+  selection and drop dedundant features which do not affect the model's
+  performance.
 ---

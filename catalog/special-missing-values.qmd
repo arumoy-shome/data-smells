@@ -1,4 +1,8 @@
 ---
 title: Special missing values
 categories: ["Missing"]
+description: |
+  Using special characters ("?"), keywords ("null", "nil") and
+  numbers (-9999, -6666) to represent missing values are a smell for problems in
+  downstream stages.
 ---

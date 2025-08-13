@@ -1,4 +1,7 @@
 ---
 title: Duplicate examples
 categories: ["Redundant"]
+description: |
+  Duplicate examples make the dataset "bloated" and can lead to
+  overfitting.
 ---

@@ -1,4 +1,7 @@
 ---
 title: Hierarchy from label encoding
 categories: ["Categorical"]
+description: |
+  Label encoding sensitive categorical features can introduce
+  unwanted hierarchy amongst the values and lead to biased predictions.
 ---

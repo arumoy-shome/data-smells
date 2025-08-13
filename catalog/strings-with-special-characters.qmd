@@ -1,4 +1,8 @@
 ---
 title: Strings with special characters
 categories: ["String"]
+description: |
+  The presence of leading and trailing whitespaces and special
+  characters such as punctuation marks is a smell for potential problems in the
+  data analysis stage.
 ---

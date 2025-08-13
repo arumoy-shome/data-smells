@@ -1,4 +1,7 @@
 ---
-title: Missing Values
+title: Nulltype Missing Values
 categories: ["Missing"]
+description: |
+  Missing values are ignored by data analysis tools which performing
+  statistical computations, leading to inaccurate and biased conclusions.
 ---

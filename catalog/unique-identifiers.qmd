@@ -1,4 +1,7 @@
 ---
 title: Unique Identifiers
 categories: ["Redundant"]
+description: |
+  Columns containing unique identifiers are redundant when training
+  machine learning models and may lead to problems in downstream stages.
 ---

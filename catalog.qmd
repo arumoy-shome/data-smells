@@ -1,7 +1,0 @@
----
-title: Catalog
-listing: 
-  contents: catalog
-  type: table
-  categories: true
----

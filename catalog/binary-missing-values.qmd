@@ -1,4 +1,18 @@
 ---
 title: Binary missing values
 categories: ["Missing"]
+description: |
+  Presence of high quantities of missing data primarily within
+  a column (as opposed to being distributed across rows and columns) can be
+  a smell that the missing data might carry implicit meaning of a negative binary
+  response.
 ---
+
+Presence of high quantities of missing data primarily within a column—as
+opposed to being distributed across rows and columns—can be a smell that the
+data is not truly missing. The missing values in such cases may carry an
+implicit meaning of a negative binary response. This can be validated further
+by observing the column header along with the non-missing values of the
+feature(s) in question. If the non-missing data is indicative of a positive
+response such as ‘{t,T}rue’ or ‘{y,Y}es’ then the missing data may indicate
+a negative response. 

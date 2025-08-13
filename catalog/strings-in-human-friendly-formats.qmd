@@ -1,4 +1,8 @@
 ---
 title: Strings in human-friendly formats
 categories: ["String"]
+description: |
+  Numerical information being representd in a human-friendly format
+  ("90 min", "2 seasons") is a smell for potential problems during the data
+  analysis stage.
 ---

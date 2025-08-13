@@ -1,4 +1,7 @@
 ---
 title: Presence of sensitive features
 categories: ["Miscellaneous"]
+description: |
+  Presence of sensitive features such as *sex*, *gender*, *race* or
+  *income* can lead to biased and unfair model predictions.
 ---

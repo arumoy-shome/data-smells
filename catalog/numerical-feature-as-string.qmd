@@ -1,4 +1,8 @@
 ---
 title: Numerical feature as string
 categories: ["String"]
+description: |
+  String features with names that indicate a numerical data type
+  (e.g., "current_ver", "android_ver") is a smell that the data type of the
+  column was identified incorrectly by the data analysis tool.
 ---

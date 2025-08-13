@@ -1,4 +1,8 @@
 ---
 title: Unknown unit of measure
 categories: ["Miscellaneous"]
+description: |
+  Lack of a common unit of measure (distance, area, size, etc.) for
+  all numerical features is an early indicator of potential problems that can
+  arise during model training.
 ---
