@@ -1,0 +1,4 @@
+---
+title: Binary missing values
+categories: ["Missing"]
+---

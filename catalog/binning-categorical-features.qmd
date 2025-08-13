@@ -1,0 +1,4 @@
+---
+title: Binning categorical features
+categories: ["Categorical"]
+---

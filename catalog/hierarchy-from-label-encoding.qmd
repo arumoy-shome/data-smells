@@ -1,0 +1,4 @@
+---
+title: Hierarchy from label encoding
+categories: ["Categorical"]
+---
