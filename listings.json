@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/catalog.html",
+    "listing": "/index.html",
     "items": [
       "/catalog/binary-missing-values.html",
       "/catalog/binning-categorical-features.html",
