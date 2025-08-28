@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/avocado.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/unknown-unit-of-measure.html</loc>
-    <lastmod>2025-08-28T09:31:20.647Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.387Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/correlated-features.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/presence-of-sensitive-features.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/strings-with-special-characters.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.387Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/duplicate-examples.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/hierarchy-from-label-encoding.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/unique-identifiers.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.387Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/index.html</loc>
-    <lastmod>2025-08-28T09:31:20.647Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.387Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/adult.html</loc>
-    <lastmod>2025-08-28T09:31:20.645Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.385Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/airbnb.html</loc>
-    <lastmod>2025-08-28T09:31:20.645Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.385Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/about.html</loc>
-    <lastmod>2025-08-28T09:31:20.644Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.384Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/special-missing-values.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.387Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/binary-missing-values.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/numerical-feature-as-string.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/missing-values.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/binning-categorical-features.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/imbalanced-examples.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.386Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/catalog/strings-in-human-friendly-formats.html</loc>
-    <lastmod>2025-08-28T09:31:20.646Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.387Z</lastmod>
   </url>
   <url>
     <loc>https://arumoy-shome.github.io/data-smells/abalone.html</loc>
-    <lastmod>2025-08-28T09:31:20.644Z</lastmod>
+    <lastmod>2025-08-28T09:57:48.384Z</lastmod>
   </url>
 </urlset>
